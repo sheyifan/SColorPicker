@@ -1,0 +1,142 @@
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="249.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/8.0.221" stylesheets="@prettify1.css">
+    <TabPane id="tabPane" prefHeight="200.0" prefWidth="333.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab id="RGB" text="RGB">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="294.0">
+                <Slider id="RSlider" layoutX="75.0" layoutY="25.0" max="255" value="255"/>
+                <Slider id="GSlider" layoutX="75.0" layoutY="70.0" max="255" value="255"/>
+                <Slider id="BSlider" layoutX="75.0" layoutY="115.0" max="255" value="255"/>
+                <Label id="RLabel" layoutX="15.0" layoutY="25.0" text="R"/>
+                <Label id="GLabel" layoutX="14.0" layoutY="70.0" text="G"/>
+                <Label id="BLabel" layoutX="14.0" layoutY="115.0" text="B"/>
+                <TextField id="RText" layoutX="267.0" layoutY="20.0" prefHeight="27.0" prefWidth="52.0"
+                           text="255"/>
+                <TextField id="GText" layoutX="267.0" layoutY="65.0" prefHeight="27.0" prefWidth="52.0"
+                           text="255"/>
+                <TextField id="BText" layoutX="267.0" layoutY="110.0" prefHeight="27.0" prefWidth="52.0"
+                           text="255"/>
+            </AnchorPane>
+        </Tab>
+        <Tab text="HSV">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab text="Web">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <TextField id="webText" layoutX="102.0" layoutY="64.0" prefHeight="27.0" prefWidth="102.0" text="ffffff"/>
+                <Label id="webPrefix" layoutX="80.0" layoutY="69.0" text="#"/>
+            </AnchorPane>
+        </Tab>
+        <Tab text="Pxs">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <Pane layoutX="155.0" layoutY="40.0" id="p0p4" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="155.0" layoutY="50.0" id="p0p3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="155.0" layoutY="60.0" id="p0p2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="155.0" layoutY="70.0" id="p0p1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="155.0" layoutY="80.0" id="p0p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="155.0" layoutY="90.0" id="p0n1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="155.0" layoutY="100.0" id="p0n2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="155.0" layoutY="110.0" id="p0n3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="155.0" layoutY="120.0" id="p0n4" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+
+                <Pane layoutX="145.0" layoutY="42.5" id="n1p4" prefHeight="2.5" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="145.0" layoutY="50.0" id="n1p3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="145.0" layoutY="60.0" id="n1p2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="145.0" layoutY="70.0" id="n1p1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="145.0" layoutY="80.0" id="n1p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="145.0" layoutY="90.0" id="n1n1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="145.0" layoutY="100.0" id="n1n2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="145.0" layoutY="110.0" id="n1n3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="145.0" layoutY="120.0" id="n1n4" prefHeight="2.5" prefWidth="5.0" style="-fx-background-color: black;" />
+
+                <Pane layoutX="165.0" layoutY="42.5" id="p1p4" prefHeight="2.5" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="165.0" layoutY="50.0" id="p1p3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="165.0" layoutY="60.0" id="p1p2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="165.0" layoutY="70.0" id="p1p1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="165.0" layoutY="80.0" id="p1p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="165.0" layoutY="90.0" id="p1n1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="165.0" layoutY="100.0" id="p1n2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="165.0" layoutY="110.0" id="p1n3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="165.0" layoutY="120.0" id="p1n4" prefHeight="2.5" prefWidth="5.0" style="-fx-background-color: black;" />
+
+                <Pane layoutX="135.0" layoutY="50.0" id="n2p3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="135.0" layoutY="60.0" id="n2p2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="135.0" layoutY="70.0" id="n2p1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="135.0" layoutY="80.0" id="n2p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="135.0" layoutY="90.0" id="n2n1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="135.0" layoutY="100.0" id="n2n2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="135.0" layoutY="110.0" id="n2n3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+
+                <Pane layoutX="175.0" layoutY="50.0" id="p2p3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="175.0" layoutY="60.0" id="p2p2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="175.0" layoutY="70.0" id="p2p1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="175.0" layoutY="80.0" id="p2p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="175.0" layoutY="90.0" id="p2n1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="175.0" layoutY="100.0" id="p2n2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="175.0" layoutY="110.0" id="p2n3" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+
+                <Pane layoutX="127.5" layoutY="52.5" id="n3p3" prefHeight="2.5" prefWidth="2.5" style="-fx-background-color: black;" />
+                <Pane layoutX="125.0" layoutY="60.0" id="n3p2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="125.0" layoutY="70.0" id="n3p1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="125.0" layoutY="80.0" id="n3p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="125.0" layoutY="90.0" id="n3n1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="125.0" layoutY="100.0" id="n3n2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="127.5" layoutY="110.0" id="n3n3" prefHeight="2.5" prefWidth="2.5" style="-fx-background-color: black;" />
+
+                <Pane layoutX="185.0" layoutY="52.5" id="p3p3" prefHeight="2.5" prefWidth="2.5" style="-fx-background-color: black;" />
+                <Pane layoutX="185.0" layoutY="60.0" id="p3p2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="185.0" layoutY="70.0" id="p3p1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="185.0" layoutY="80.0" id="p3p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="185.0" layoutY="90.0" id="p3n1" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="185.0" layoutY="100.0" id="p3n2" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="185.0" layoutY="110.0" id="p3n3" prefHeight="2.5" prefWidth="2.5" style="-fx-background-color: black;" />
+
+                <Pane layoutX="117.5" layoutY="70.0" id="n4p1" prefHeight="5.0" prefWidth="2.5" style="-fx-background-color: black;" />
+                <Pane layoutX="115.0" layoutY="80.0" id="n4p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="117.5" layoutY="90.0" id="n4n1" prefHeight="5.0" prefWidth="2.5" style="-fx-background-color: black;" />
+
+                <Pane layoutX="195.0" layoutY="70.0" id="p4p1" prefHeight="5.0" prefWidth="2.5" style="-fx-background-color: black;" />
+                <Pane layoutX="195.0" layoutY="80.0" id="p4p0" prefHeight="5.0" prefWidth="5.0" style="-fx-background-color: black;" />
+                <Pane layoutX="195.0" layoutY="90.0" id="p4n1" prefHeight="5.0" prefWidth="2.5" style="-fx-background-color: black;" />
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+    <Separator layoutY="202.0" prefHeight="0.0" prefWidth="332.0"/>
+    <Separator layoutY="252.0" prefWidth="600"/>
+    <Separator id="separator1" layoutX="330.0" orientation="VERTICAL" prefHeight="254.0"/>
+    <Separator id="separator2" layoutX="355.0" orientation="VERTICAL" prefHeight="254.0"/>
+    <Separator layoutX="600.0" orientation="VERTICAL" prefHeight="254.0"/>
+    <Separator orientation="VERTICAL" prefHeight="252.0"/>
+    <Label id="OLabel" layoutX="14.0" layoutY="218.0" text="O"/>
+    <Slider id="OSlider" layoutX="76.0" layoutY="219.0" max="255" value="255"/>
+    <Pane id="colorPane" layoutX="335.0" prefHeight="253.0" prefWidth="18.0" style="-fx-background-color: white"/>
+    <PieChart id="pieChart" layoutX="378.0" layoutY="30" prefHeight="102.0" prefWidth="100.0"/>
+    <ColorPicker id="chooseButton" layoutX="428.0" layoutY="213.0" />
+    <TextField id="OText" layoutX="270.0" layoutY="213.0" prefHeight="27.0" prefWidth="45.0" text="255"/>
+    <Separator layoutX="378.0" layoutY="202.0" prefWidth="200.0"/>
+    <ImageView id="file" fitHeight="20.0" fitWidth="20.0" layoutX="568.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@res/5_1.jpg"/>
+    </ImageView>
+    <ImageView id="photo" fitHeight="20.0" fitWidth="20.0" layoutX="568.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@res/1_1.png"/>
+    </ImageView>
+    <ImageView id="cut" fitHeight="20.0" fitWidth="20.0" layoutX="568.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@res/3_1.jpg"/>
+    </ImageView>
+    <ImageView id="theme" fitHeight="20.0" fitWidth="20.0" layoutX="568.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@res/7_1.jpg"/>
+    </ImageView>
+</Pane>
+

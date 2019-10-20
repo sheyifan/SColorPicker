@@ -1,0 +1,128 @@
+#pane{
+    -fx-background-color: #e6e6e6;
+}
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color: -fx-outer-border, -fx-text-box-border, #e6e6e6;
+}
+.tab {
+    -fx-background-color: #e6e6e6;
+    -fx-font-family: "Andale Mono";
+    -fx-background-radius: 0;
+}
+
+.tab-label {
+    -fx-text-fill: #333333;
+}
+
+.tab-header-background {
+    -fx-background-color: white;
+}
+
+
+.tab:selected .tab-label {
+    -fx-text-fill: #7c4a80;
+    -fx-font-weight: bold;
+}
+.tab:selected{
+    -fx-background-color: white;
+}
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-radius: 0px;
+    -fx-border-width: 1px 1px 0px 1px;
+    -fx-border-color: #e6e6e6;
+}
+
+
+
+#RLabel{
+    -fx-text-fill: red;
+    -fx-font-family: "GB18030 Bitmap";
+}
+#GLabel{
+    -fx-text-fill: green;
+    -fx-font-family: "GB18030 Bitmap";
+}
+#BLabel{
+    -fx-text-fill: blue;
+    -fx-font-family: "GB18030 Bitmap";
+}
+#OLabel{
+    -fx-text-fill: grey;
+    -fx-font-family: "GB18030 Bitmap";
+}
+
+#RSlider .track{
+    -fx-background-color: red;
+}
+#GSlider .track{
+    -fx-background-color: green;
+}
+#BSlider .track{
+    -fx-background-color: blue;
+}
+#OSlider .track{
+    -fx-background-color: grey;
+}
+
+#RText , #GText , #BText , #OText{
+    -fx-background-color: #e6e6e6;
+}
+#RText{
+    -fx-text-fill: #333333;
+}
+#GText{
+    -fx-text-fill: #333333;
+}
+#BText{
+    -fx-text-fill: #333333;
+}
+#OText{
+    -fx-text-fill: #333333;
+}
+#webText{
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+    -fx-font-family: Consolas;
+}
+
+#chooseButton {
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-border-radius: 3px;
+    -fx-font-family: Consolas;
+}
+#chooseButton .label{
+    -fx-text-fill: black;
+}
+#chooseButton:hover{
+    -fx-background-color: #e6e6e6;
+}
+#chooseButton:pressed{
+    -fx-background-color: #e6e6e6;
+    -fx-border-color: #8099ff;
+}
+#openButton {
+    -fx-background-color: #333333;
+    -fx-text-fill: #e6e6e6;
+    -fx-border-color: #e6e6e6;
+    -fx-border-radius: 3px;
+    -fx-font-family: Consolas;
+}
+#openButton .label{
+    -fx-text-fill: #e6e6e6;
+}
+#openButton:hover{
+    -fx-background-color: black;
+}
+#openButton:pressed{
+    -fx-background-color: black;
+    -fx-border-color: #8099ff;
+}
+#webPrefix{
+    -fx-text-fill: #333333;
+}
+#pieChart .label{
+    -fx-text-fill: #333333;
+    -fx-font-family: Consolas;
+}
