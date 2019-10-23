@@ -1,0 +1,23 @@
+#pane{
+    -fx-background-color: #333333;
+}
+.button {
+    -fx-background-color: #333333;
+    -fx-text-fill: #e6e6e6;
+    -fx-border-color: #e6e6e6;
+    -fx-border-radius: 3px;
+    -fx-font-family: Consolas;
+}
+.button .label{
+    -fx-text-fill: #e6e6e6;
+}
+.button:pressed{
+    -fx-background-color: black;
+    -fx-border-color: #8099ff;
+}
+.button:hover{
+    -fx-background-color: black;
+}
+.radio-button .label{
+    -fx-text-fill: #e6e6e6;
+}

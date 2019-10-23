@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane id="startDialogue" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="274.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx" >
+    <header>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="274.0" style="-fx-background-color: #333333;">
+            <Label layoutX="81.0" layoutY="43.0" style="-fx-text-fill: #e6e6e6;" text="软件：调色取色器"/>
+            <Label layoutX="87.0" layoutY="69.0" style="-fx-text-fill: #e6e6e6;" text="单位：苏州大学"/>
+            <Label layoutX="67.0" layoutY="95.0" style="-fx-text-fill: #e6e6e6;" text="更新时间：2019.10.22"/>
+            <Label layoutX="104.0" layoutY="121.0" style="-fx-text-fill: #e6e6e6;" text="版本号：5"/>
+        </AnchorPane>
+    </header>
+    <expandableContent>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+    </expandableContent>
+</DialogPane>
+

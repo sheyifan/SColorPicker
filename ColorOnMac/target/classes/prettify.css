@@ -26,8 +26,9 @@
     -fx-font-weight: bold;
 }
 .tab:selected{
-    -fx-background-color: #1a1a1a;
+    -fx-background-color: linear-gradient(to right, black, firebrick);
 }
+/*linear-gradient(to right, #1a1a1a, firebrick)*/
 .tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
     -fx-border-radius: 0px;
     -fx-border-width: 1px 1px 0px 1px;
@@ -37,60 +38,104 @@
 
 
 #RLabel{
-    -fx-text-fill: red;
-    -fx-font-family: "GB18030 Bitmap";
-}
+     -fx-text-fill: red;
+     -fx-font-family: "GB18030 Bitmap";
+ }
 #GLabel{
     -fx-text-fill: green;
     -fx-font-family: "GB18030 Bitmap";
 }
 #BLabel{
-    -fx-text-fill: blue;
+    -fx-text-fill: #2e6cff;
+    -fx-font-family: "GB18030 Bitmap";
+}
+#HLabel{
+    -fx-text-fill: darkgreen;
+    -fx-font-family: "GB18030 Bitmap";
+}
+#SLabel{
+    -fx-text-fill: black;
+    -fx-font-family: "GB18030 Bitmap";
+}
+#VLabel{
+    -fx-text-fill: #e6e6e6;
     -fx-font-family: "GB18030 Bitmap";
 }
 #OLabel{
-    -fx-text-fill: #e6e6e6;
+    -fx-text-fill: grey;
     -fx-font-family: "GB18030 Bitmap";
 }
 
+/*
 #RSlider .track{
-    -fx-background-color: red;
+    -fx-background-color:
+    linear-gradient(
+            from 0px 0px to 80px 0px,
+            red, red 99%,
+            #e6e6e6
+    );
+}
+ */
+#RSlider .track{
+    -fx-background-color: linear-gradient(to right, #1a1a1a, firebrick);
 }
 #GSlider .track{
-    -fx-background-color: green;
+    -fx-background-color: linear-gradient(to right, #1a1a1a, green);
 }
 #BSlider .track{
-    -fx-background-color: blue;
+    -fx-background-color: linear-gradient(to right, #1a1a1a, #2e6cff);
+}
+#HSlider .track{
+    -fx-background-color: linear-gradient(to right, darkred, darkgreen , darkblue, darkred);
+}
+#SSlider .track{
+    -fx-background-color: linear-gradient(to right, #e6e6e6, darkred, darkgreen , darkblue);
+}
+#VSlider .track{
+    -fx-background-color: linear-gradient(to right, black, #e6e6e6);
 }
 #OSlider .track{
-    -fx-background-color: black;
+    -fx-background-color: linear-gradient(to right, #1a1a1a, #663366);
 }
 
-#RText , #GText , #BText , #OText{
+.progress-bar .bar {
+    -fx-background-color: transparent ;
+}
+
+#RText , #GText , #BText , #HText , #SText , #VText , #OText{
     -fx-background-color: #333333;
 }
 #RText{
-    -fx-text-fill: #e6e6e6;
+    -fx-text-fill: firebrick;
 }
 #GText{
-    -fx-text-fill: #e6e6e6;
+    -fx-text-fill: green;
 }
 #BText{
-    -fx-text-fill: #e6e6e6;
+    -fx-text-fill: #2e6cff;
+}
+#HText{
+    -fx-text-fill: firebrick;
+}
+#SText{
+    -fx-text-fill: green;
+}
+#VText{
+    -fx-text-fill: #2e6cff;
 }
 #OText{
-    -fx-text-fill: #e6e6e6;
+    -fx-text-fill: grey;
 }
 #webText{
-    -fx-background-color: black;
+    -fx-background-color: linear-gradient(to right, black, #333333);
     -fx-text-fill: #e6e6e6;
     -fx-font-family: Consolas;
 }
 
 #chooseButton {
-    -fx-background-color: #333333;
+    -fx-background-color: black;
     -fx-text-fill: #e6e6e6;
-    -fx-border-color: #e6e6e6;
+    -fx-border-color: black;
     -fx-border-radius: 3px;
     -fx-font-family: Consolas;
 }
@@ -98,26 +143,9 @@
     -fx-text-fill: #e6e6e6;
 }
 #chooseButton:hover{
-    -fx-background-color: black;
+    -fx-background-color: #1a1a1a;
 }
 #chooseButton:pressed{
-    -fx-background-color: black;
-    -fx-border-color: #8099ff;
-}
-#openButton {
-    -fx-background-color: #333333;
-    -fx-text-fill: #e6e6e6;
-    -fx-border-color: #e6e6e6;
-    -fx-border-radius: 3px;
-    -fx-font-family: Consolas;
-}
-#openButton .label{
-    -fx-text-fill: #e6e6e6;
-}
-#openButton:hover{
-    -fx-background-color: black;
-}
-#openButton:pressed{
     -fx-background-color: black;
     -fx-border-color: #8099ff;
 }
@@ -127,4 +155,5 @@
 #pieChart .label{
     -fx-text-fill: #e6e6e6;
     -fx-font-family: Consolas;
+    -fx-font-size: 16px;
 }
